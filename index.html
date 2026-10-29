@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MW Arts Gallery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="brand" onclick="showPage('home')">
+        <div class="mini-logo">
+          <img src="1000180421.jpg" alt="MW Arts Gallery">
+        </div>
+
+        <div>
+          <h1>MW</h1>
+          <span>ARTS GALLERY</span>
+        </div>
+      </div>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+      <nav id="menu">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('collections')">Collections</button>
+        <button onclick="showPage('about')">About</button>
+        <button onclick="showPage('orders')">How to Order</button>
+      </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <main id="home" class="page active">
+
+      <section class="hero">
+
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            ✦ HANDCRAFTED WITH LOVE ✦
+          </div>
+
+          <h2>
+            Behind every gift
+            <span>is a little emotion.</span>
+          </h2>
+
+          <p>
+            Beautiful wedding stationery, customised gifts
+            and thoughtful creations made specially for
+            your most memorable moments.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="gold-btn" onclick="showPage('collections')">
+              Explore Collection
+            </button>
+
+            <button class="outline-btn" onclick="showPage('orders')">
+              How to Order
+            </button>
+          </div>
+
+          <div class="trust">
+            <div>
+              <strong>422+</strong>
+              <span>Posts</span>
+            </div>
+
+            <div>
+              <strong>3K+</strong>
+              <span>Happy Audience</span>
+            </div>
+
+            <div>
+              <strong>100%</strong>
+              <span>Handcrafted</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero-logo">
+          <div class="logo-ring">
+            <img src="1000180421.jpg" alt="MW Logo">
+          </div>
+
+          <span>MW ARTS GALLERY</span>
+        </div>
+
+      </section>
+
+
+      <section class="intro">
+
+        <p class="small-title">OUR SPECIALITIES</p>
+
+        <h2>Made for moments<br><i>worth remembering.</i></h2>
+
+        <div class="category-grid">
+
+          <div class="category-card" onclick="showPage('collections')">
+            <div class="category-icon">💍</div>
+            <h3>Wedding Stationery</h3>
+            <p>Elegant details for your special day.</p>
+          </div>
+
+          <div class="category-card" onclick="showPage('collections')">
+            <div class="category-icon">🎁</div>
+            <h3>Customised Gifts</h3>
+            <p>Personal touches that make gifts memorable.</p>
+          </div>
+
+          <div class="category-card" onclick="showPage('collections')">
+            <div class="category-icon">🌸</div>
+            <h3>Special Creations</h3>
+            <p>Thoughtfully crafted pieces for every occasion.</p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="featured">
+
+        <div class="section-heading">
+          <div>
+            <p class="small-title">FROM THE GALLERY</p>
+            <h2>Little pieces of <i>love.</i></h2>
+          </div>
+
+          <button onclick="showPage('collections')">
+            View all →
+          </button>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item large">
+            <img src="1000180420.jpg" alt="Wedding stationery">
+            <div class="image-label">
+              <span>01</span>
+              Wedding Details
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="1000180420.jpg" alt="Customised gifts">
+            <div class="image-label">
+              <span>02</span>
+              Custom Gifts
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="1000180420.jpg" alt="Wedding creations">
+            <div class="image-label">
+              <span>03</span>
+              Wedding Creations
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="quote-section">
+
+        <div class="quote-mark">“</div>
+
+        <h2>
+          Every celebration begins
+          with a beautiful first impression.
+        </h2>
+
+        <p>
+          From thoughtful stationery to customised gifts,
+          we create little details that become lasting memories.
+        </p>
+
+      </section>
+
+    </main>
+
+
+    <!-- COLLECTIONS -->
+    <main id="collections" class="page">
+
+      <section class="page-header">
+        <p class="small-title">OUR COLLECTION</p>
+
+        <h2>Created with <i>intention.</i></h2>
+
+        <p>
+          Discover our handcrafted wedding stationery
+          and customised gifting ideas.
+        </p>
+      </section>
+
+
+      <section class="products">
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="1000180420.jpg">
+            <span>Wedding</span>
+          </div>
+
+          <div class="product-info">
+            <h3>Wedding Stationery</h3>
+            <p>Elegant personalised stationery for your celebration.</p>
+
+            <div class="product-bottom">
+              <strong>Custom Price</strong>
+              <button onclick="orderNow('Wedding Stationery')">Enquire</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="1000180420.jpg">
+            <span>Gift</span>
+          </div>
+
+          <div class="product-info">
+            <h3>Customised Gift Box</h3>
+            <p>A thoughtful gift designed especially for someone special.</p>
+
+            <div class="product-bottom">
+              <strong>Custom Price</strong>
+              <button onclick="orderNow('Customised Gift Box')">Enquire</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="1000180420.jpg">
+            <span>Special</span>
+          </div>
+
+          <div class="product-info">
+            <h3>Personalised Creation</h3>
+            <p>Made according to your story, style and occasion.</p>
+
+            <div class="product-bottom">
+              <strong>Custom Price</strong>
+              <button onclick="orderNow('Personalised Creation')">Enquire</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- ABOUT -->
+    <main id="about" class="page">
+
+      <section class="about-page">
+
+        <div class="about-logo">
+          <img src="1000180421.jpg">
+        </div>
+
+        <p class="small-title">ABOUT MW ARTS GALLERY</p>
+
+        <h2>
+          Where little details
+          <i>tell big stories.</i>
+        </h2>
+
+        <p class="about-text">
+          MW Arts Gallery creates beautiful wedding stationery
+          and customised gifts with a personal touch.
+        </p>
+
+        <p class="about-text">
+          Every piece is thoughtfully designed to match your
+          celebration, your personality and the emotions
+          behind the occasion.
+        </p>
+
+        <div class="about-points">
+
+          <div>
+            <span>✦</span>
+            <strong>Personalised</strong>
+            <p>Created specially for you.</p>
+          </div>
+
+          <div>
+            <span>✦</span>
+            <strong>Handcrafted</strong>
+            <p>Made with attention to detail.</p>
+          </div>
+
+          <div>
+            <span>✦</span>
+            <strong>Memorable</strong>
+            <p>Designed to become a keepsake.</p>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- ORDERS -->
+    <main id="orders" class="page">
+
+      <section class="page-header">
+
+        <p class="small-title">LET'S CREATE TOGETHER</p>
+
+        <h2>How to <i>order.</i></h2>
+
+        <p>
+          Getting your personalised creation is simple.
+        </p>
+
+      </section>
+
+
+      <section class="steps">
+
+        <div class="step">
+          <span>01</span>
+          <div>
+            <h3>Tell us what you need</h3>
+            <p>
+              Share your idea, occasion and preferred design.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span>02</span>
+          <div>
+            <h3>Choose your customisation</h3>
+            <p>
+              Discuss colours, names, themes and details.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span>03</span>
+          <div>
+            <h3>Confirm your order</h3>
+            <p>
+              Once everything is finalised, your creation
+              goes into making.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span>04</span>
+          <div>
+            <h3>Receive your special piece</h3>
+            <p>
+              Your handcrafted creation is ready for its
+              special moment.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="order-box">
+
+        <div>
+          <p class="small-title">READY WHEN YOU ARE</p>
+
+          <h2>Have something special<br><i>in mind?</i></h2>
+
+          <p>
+            Send us a message and let's turn your idea
+            into something beautiful.
+          </p>
+        </div>
+
+        <button class="gold-btn" onclick="orderNow('Custom Order')">
+          DM to Order
+        </button>
+
+      </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+      <div class="footer-logo">
+        <img src="1000180421.jpg">
+
+        <div>
+          <strong>MW ARTS GALLERY</strong>
+          <span>Wedding Stationery • Customised Gifts</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('collections')">Collection</button>
+        <button onclick="showPage('about')">About</button>
+        <button onclick="showPage('orders')">Order</button>
+      </div>
+
+      <p class="copyright">
+        © 2026 MW Arts Gallery. Made with ♡
+      </p>
+
+    </footer>
+
+
+    <!-- TOAST -->
+    <div id="toast"></div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
